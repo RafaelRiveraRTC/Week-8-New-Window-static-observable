@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:Week_8_Junk_Notes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Canvas Margin="0,3,0,0" Background="#FFD81515">
 
-    </Grid>
+        <Button Content="BtnOpenNewWindow" Click="Button_Click" Grid.Column="2" Canvas.Left="600" Canvas.Top="366" Height="66" Width="201"/>
+
+        <ListBox x:Name="lbShowNames" Grid.Column="2" Height="216" Canvas.Left="361" Canvas.Top="48" Width="211"/>
+
+        <TextBox x:Name="txtName" TextWrapping="Wrap" Text="TextBox" Grid.Column="2" Canvas.Left="18" Canvas.Top="54" Width="165" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <Button Content="Add Name" Click="Button_Click_1" Grid.Column="2" Canvas.Left="28" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Center" Width="137"/>
+
+        <Label x:Name="lblBuisinessName"
+            Content="The Biggest Name" Canvas.Left="75" Canvas.Top="214"/>
+
+    </Canvas>
 </Window>
